@@ -4,11 +4,19 @@ Where each Every Task or message will go through the Server Server is the bridg 
 Methodology is simply Like Star Topology idea wher Server is HUB and Nodes are the Clients.
 
 # To compile the File
+
+1.Go to the file Directory where the code is stored
+2.Run the below command in the terminal
+
 ```
 gcc chatApp.c -o chatApp.exe
 ```
 
 # To Run Server Side Program
+
+1.Go to the file Directory where the code's exe (executive file) generated or compiled file location
+2.Run the below command in the terminal
+
 ```
 ./chatApp.exe s <port>
 ```
@@ -19,57 +27,60 @@ gcc chatApp.c -o chatApp.exe
 ```
 
 <port> enter any port 
-note:- make sure it the port is free to use before using it.
+
+
+> [!NOTE]
+> Make sure it the port is free to use before using it.
 
 
 # Server Side Functionalities
 
 
-To get Author of the Code
+1.To get Author of the Code
 > AUTHOR
 
 
-To get Server IPv4
+2.To get Server IPv4
 > IP <IPV4>
 
 
-To get Server Port
+3.To get Server Port
 > PORT <PORT>
 
 
-This below one will be sent by client to server to login, then server will read this message.
+4.This below one will be sent by client to server to login, then server will read this message.
 > LOGIN <IPv4> <Port> <Name>
 
 
-To get the LIST of client when  client request to the server, server will read it. Even Works for server.
+5.To get the LIST of client when  client request to the server, server will read it. Even Works for server.
 > LIST
 
 
-To get Statistics of send and recv message count by each client it will only work on server side.
+6.To get Statistics of send and recv message count by each client it will only work on server side.
 > STATISTICS
 
 
-To check Who are still logged it and in active state. Work on both sides(Server/Client).
+7.To check Who are still logged it and in active state. Work on both sides(Server/Client).
 > REFRESH
 
 
-This will be sent by the client to server and read by the server to send from one client to another client.
+8.This will be sent by the client to server and read by the server to send from one client to another client.
 > SEND <Desti-IPV4> <msg>
 
 
-Broadcast a message that is sent by the client to server, server will Broadcast the message to every client Except the sender.
+9.Broadcast a message that is sent by the client to server, server will Broadcast the message to every client Except the sender.
 > BROADCAST
 
 
-Sent by the client to server to logout.
+10.Sent by the client to server to logout.
 > LOGOUT
 
 
-To Block a certain client.
+11.To Block a certain client.
 > BLOCK <Ipv4>
 
 
-For Exiting the Application
+12.For Exiting the Application
 > EXIT
 
 
@@ -77,39 +88,39 @@ For Exiting the Application
 # Client Side Functionalities 
 
 
-To get Author of the Code
+1.To get Author of the Code
 > AUTHOR
 
 
-To get Server IPv4
+2.To get Server IPv4
 > IP <IPV4>
 
 
-To get Server Port
+3.To get Server Port
 > PORT <PORT>
 
 
-This below one will be sent by client to server to login, then server will read this message.
+4.This below one will be sent by client to server to login, then server will read this message.
 > LOGIN <IPv4> <Port> <Name>
 
 
-To get the LIST of client when  client request to the server, server will read it. Even Works for server.
+5.To get the LIST of client when  client request to the server, server will read it. Even Works for server.
 > LIST
 
 
-To check Who are still logged it and in active state. Work on both sides(Server/Client).
+6.To check Who are still logged it and in active state. Work on both sides(Server/Client).
 > REFRESH
 
 
-This will be sent by the client to server and read by the server to send from one client to another client.
+7.This will be sent by the client to server and read by the server to send from one client to another client.
 > SEND <Desti-IPV4> <msg>
 
 
-Broadcast a message that is sent by the client to server, server will Broadcast the message to every client Except the sender.
+8.Broadcast a message that is sent by the client to server, server will Broadcast the message to every client Except the sender.
 > BROADCAST
 
 
-Sent by the client to server to logout.
+9.Sent by the client to server to logout.
 > LOGOUT
 
 
@@ -119,3 +130,6 @@ To Block a certain client.
 
 For Exiting the Application
 > EXIT
+
+
+[^1] My Refernce material. https://beej.us/guide/bgnet/html/split/
