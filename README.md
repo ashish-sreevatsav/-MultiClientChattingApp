@@ -132,4 +132,4 @@ For Exiting the Application
 > EXIT
 
 
-[^1] My Refernce material. https://beej.us/guide/bgnet/html/split/
+[^1]: My Refernce material. https://beej.us/guide/bgnet/html/split/
