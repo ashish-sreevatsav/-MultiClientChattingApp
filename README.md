@@ -1,5 +1,7 @@
 # MultiClientChattingApp
-Multiple client and single server chat application in C language using Socket Programming
+Multiple client and single server chat application in C language using Socket Programming.
+Where each Every Task or message will go through the Server Server is the bridg to All Clients that are communicating.
+Methodology is simply Like Star Topology idea wher Server is HUB and Nodes are the Clients.
 
 # To compile the File
 ```
